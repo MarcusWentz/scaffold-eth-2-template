@@ -1,5 +1,30 @@
 import * as chains from "viem/chains";
 
+// Define your custom chain
+const customChain = {
+  id: 20993, // Replace with your chain ID
+  name: "fluentTestnet",
+  nativeCurrency: {
+    name: "Native Token",
+    symbol: "ETH", // Replace with your token symbol
+    decimals: 18,
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.dev.gblend.xyz"], // Replace with your RPC URL
+    },
+    public: {
+      http: ["https://rpc.dev.gblend.xyz"], // Replace with your RPC URL
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Explorer",
+      url: "YOUR_BLOCK_EXPLORER_URL", // Replace with your block explorer URL
+    },
+  },
+} as const satisfies chains.Chain;
+
 export type ScaffoldConfig = {
   targetNetworks: readonly chains.Chain[];
   pollingInterval: number;
@@ -13,7 +38,7 @@ export const DEFAULT_ALCHEMY_API_KEY = "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF";
 
 const scaffoldConfig = {
   // The networks on which your DApp is live
-  targetNetworks: [chains.foundry],
+  targetNetworks: [customChain],
 
   // The interval at which your front-end polls the RPC servers for new data
   // it has no effect if you only target the local network (default is 4000)
