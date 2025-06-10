@@ -36,18 +36,18 @@ cd my-dapp-example
 yarn install
 ```
 
-2. Run a local network in the first terminal:
+2. Generate a new test wallet for deploying contracts:
 
 ```
-yarn chain
+yarn generate
 ```
 
-This command starts a local Ethereum network using Foundry. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `packages/foundry/foundry.toml`.
+You can customize the network configuration in `packages/foundry/foundry.toml`.
 
-3. On a second terminal, deploy the test contract:
+3. Deploy the test contract to a selected network:
 
 ```
-yarn deploy
+yarn deploy --network fluentTestnet
 ```
 
 This command deploys a test smart contract to the local network. The contract is located in `packages/foundry/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/foundry/script` to deploy the contract to the network. You can also customize the deploy script.

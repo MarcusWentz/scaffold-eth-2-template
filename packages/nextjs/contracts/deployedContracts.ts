@@ -5,9 +5,9 @@
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
 const deployedContracts = {
-  31337: {
+  20993: {
     YourContract: {
-      address: "0xb19b36b1456e65e3a6d514d3f715f204bd59f431",
+      address: "0xa8af8c57cd369bc9162a6956d70bbba6019e67a7",
       abi: [
         {
           type: "function",
@@ -43,7 +43,49 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deploymentFile: "run-1749220729.json",
+      deploymentFile: "run-1749520621.json",
+      deploymentScript: "Deploy.s.sol",
+    },
+  },
+  31337: {
+    YourContract: {
+      address: "0x4b15718f9a605545456df9231c877e5d2242bba7",
+      abi: [
+        {
+          type: "function",
+          name: "set",
+          inputs: [
+            {
+              name: "x",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "storedData",
+          inputs: [],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "event",
+          name: "setEvent",
+          inputs: [],
+          anonymous: false,
+        },
+      ],
+      inheritedFunctions: {},
+      deploymentFile: "run-1749520489.json",
       deploymentScript: "Deploy.s.sol",
     },
   },
