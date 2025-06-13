@@ -43,49 +43,7 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deploymentFile: "run-1749520621.json",
-      deploymentScript: "Deploy.s.sol",
-    },
-  },
-  31337: {
-    YourContract: {
-      address: "0x4b15718f9a605545456df9231c877e5d2242bba7",
-      abi: [
-        {
-          type: "function",
-          name: "set",
-          inputs: [
-            {
-              name: "x",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "storedData",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "event",
-          name: "setEvent",
-          inputs: [],
-          anonymous: false,
-        },
-      ],
-      inheritedFunctions: {},
-      deploymentFile: "run-1749520489.json",
+      deploymentFile: "run-1749823515.json",
       deploymentScript: "Deploy.s.sol",
     },
   },
