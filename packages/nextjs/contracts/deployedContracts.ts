@@ -7,46 +7,8 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   20993: {
     YourContract: {
-      address: "0x045f02d261cece73135e14a31cb46a9d4818bad0",
+      address: "0xcac950678f80b8f7c0099d78615949b978f04e1b",
       abi: [
-        {
-          type: "function",
-          name: "computerWins",
-          inputs: [
-            {
-              name: "",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "marblesOnTable",
-          inputs: [
-            {
-              name: "",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          stateMutability: "view",
-        },
         {
           type: "function",
           name: "newGame",
@@ -56,7 +18,7 @@ const deployedContracts = {
         },
         {
           type: "function",
-          name: "playerWins",
+          name: "playerComputerWins",
           inputs: [
             {
               name: "",
@@ -64,6 +26,70 @@ const deployedContracts = {
               internalType: "address",
             },
           ],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "playerMarblesOnTable",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "playerUserWins",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "topUserAddress",
+          inputs: [],
+          outputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "topUserWins",
+          inputs: [],
           outputs: [
             {
               name: "",
@@ -78,7 +104,7 @@ const deployedContracts = {
           name: "turn",
           inputs: [
             {
-              name: "marblesAmount",
+              name: "removeMarblesAmount",
               type: "uint256",
               internalType: "uint256",
             },
@@ -88,7 +114,7 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deploymentFile: "run-1750094224.json",
+      deploymentFile: "run-1750095202.json",
       deploymentScript: "Deploy.s.sol",
     },
   },
