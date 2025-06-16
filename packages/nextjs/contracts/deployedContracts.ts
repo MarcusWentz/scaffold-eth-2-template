@@ -7,18 +7,11 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   20993: {
     YourContract: {
-      address: "0xbd44bf9158644a9e3d71af3b6361d23f34a70f66",
+      address: "0x4b15718f9a605545456df9231c877e5d2242bba7",
       abi: [
         {
           type: "function",
-          name: "newGame",
-          inputs: [],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "players",
+          name: "computerWins",
           inputs: [
             {
               name: "",
@@ -28,17 +21,52 @@ const deployedContracts = {
           ],
           outputs: [
             {
-              name: "marblesOnTable",
+              name: "",
               type: "uint256",
               internalType: "uint256",
             },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "marblesOnTable",
+          inputs: [
             {
-              name: "playerWins",
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
               type: "uint256",
               internalType: "uint256",
             },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "newGame",
+          inputs: [],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "playerWins",
+          inputs: [
             {
-              name: "computerWins",
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
               type: "uint256",
               internalType: "uint256",
             },
@@ -60,7 +88,7 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deploymentFile: "run-1750093251.json",
+      deploymentFile: "run-1750093817.json",
       deploymentScript: "Deploy.s.sol",
     },
   },
