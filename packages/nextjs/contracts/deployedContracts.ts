@@ -7,28 +7,38 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   20993: {
     YourContract: {
-      address: "0xa8af8c57cd369bc9162a6956d70bbba6019e67a7",
+      address: "0xbd44bf9158644a9e3d71af3b6361d23f34a70f66",
       abi: [
         {
           type: "function",
-          name: "set",
-          inputs: [
-            {
-              name: "x",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
+          name: "newGame",
+          inputs: [],
           outputs: [],
           stateMutability: "nonpayable",
         },
         {
           type: "function",
-          name: "storedData",
-          inputs: [],
-          outputs: [
+          name: "players",
+          inputs: [
             {
               name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "marblesOnTable",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "playerWins",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "computerWins",
               type: "uint256",
               internalType: "uint256",
             },
@@ -36,14 +46,21 @@ const deployedContracts = {
           stateMutability: "view",
         },
         {
-          type: "event",
-          name: "setEvent",
-          inputs: [],
-          anonymous: false,
+          type: "function",
+          name: "turn",
+          inputs: [
+            {
+              name: "marblesAmount",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
         },
       ],
       inheritedFunctions: {},
-      deploymentFile: "run-1749823515.json",
+      deploymentFile: "run-1750093251.json",
       deploymentScript: "Deploy.s.sol",
     },
   },
